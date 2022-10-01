@@ -1,0 +1,15 @@
+.header{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+.section{
+    background-color: rgb(227, 220, 220);
+}
+#registration-form{
+    width: 100%;
+    margin: 20px auto;
+}
