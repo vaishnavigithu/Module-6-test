@@ -33,6 +33,13 @@ let USERS_DB = [];
              document.getElementById('email-invalid').style.display= 'block';
              document.getElementById('email-valid').style.display="none";
          }
+         if(password.includes("@") || password.includes("#") || password.includes("$") && password.length>=8 && password.includes(0) || password.includes(1) || password.includes(2) || password.includes(3)|| password.includes(4)){
+            document.getElementById('password-valid').style.display="block";
+            document.getElementById('password-invalid').style.display="none";
+         }else{
+            document.getElementById('password-invalid').style.display="block";
+            document.getElementById('password-valid').style.display="none";
+         }
          let error=false
      if(password !== confirmPassword){
          document.getElementById('confirm-password-invalid').style.display='block';
